@@ -1,0 +1,73 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.diskItem {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    text-align: left;
+}
+
+.partitionItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.partitionItem input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: calc(50% - 20px); /* 절반 크기로 설정 */
+    box-sizing: border-box; /* 박스 크기를 전체 크기로 맞춤 */
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+label {
+    font-size: 14px;
+    margin-left: 5px;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}

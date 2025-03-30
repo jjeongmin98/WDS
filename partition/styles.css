@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif; /* Modern font for sleek appeal */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #e5e5e5; /* Neutral, elegant background */
+  color: #333; /* Standard text color */
+}
+
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 130px; /* Slightly smaller for balance */
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Enhanced spacing for better layout */
+  margin-top: 40px;
+}
+
+.container, .calculator-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Refined shadow for a premium feel */
+  width: 400px;
+}
+
+.calculator-box {
+  background-color: #f8f8fb;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+}
+
+h2 {
+  margin-top: 0;
+  color: #111; /* Darker for strong headings */
+  font-weight: 600; /* Enhanced weight for titles */
+}
+
+#diskContainer {
+  margin-bottom: 30px;
+}
+
+.diskItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.diskItem input {
+  margin-right: 10px;
+  width: 130px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input {
+  margin: 10px 0;
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #0066cc; /* Highlight color on focus */
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 12px 0;
+  background-color: #0066cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px); /* Minor lift for button on hover */
+}
+
+#conversionResult p {
+  margin: 5px 0;
+  color: #555;
+}
+
+#calcResult, #conversionResult {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #0066cc; /* Align with button scheme */
+}

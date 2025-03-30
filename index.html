@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디스크 및 운영체제 설정</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="gabia_bk.png" alt="Gabia 로고" class="logo">
+    </div>
+
+    <div class="main-container">
+        <div class="container">
+            <h2>운영체제 선택</h2>
+            <select id="osSelection">
+                <option value="windows">Windows</option>
+                <option value="rocky">Rocky</option>
+                <option value="ubuntu">Ubuntu</option>
+                <option value="centos">CentOS</option>
+            </select>
+
+            <h2>디스크 설정</h2>
+            <div id="diskContainer">
+                <div class="diskItem">
+                    <input type="number" placeholder="디스크 1 용량" class="diskInput" oninput="convertToMB(this)">
+                    <select class="unitSelect" onchange="convertToMB(this.previousElementSibling)">
+                        <option value="MB">MB</option>
+                        <option value="GB">GB</option>
+                        <option value="TB">TB</option>
+                    </select>
+                    <button onclick="addDisk()">+</button>
+                    <button onclick="removeDisk()">-</button>
+                </div>
+            </div>
+
+            <button id="nextButton" onclick="proceed()" disabled>다음으로</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
